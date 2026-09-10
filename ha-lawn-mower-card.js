@@ -1,4 +1,4 @@
-const VERSION = "0.3.1";
+const VERSION = "0.4.0";
 
 class HALawnMowerCard extends HTMLElement {
   constructor() {
@@ -254,18 +254,18 @@ class HALawnMowerCard extends HTMLElement {
       .chip ha-icon{--mdc-icon-size:14px}
       .section-title{margin:14px 0 8px;color:var(--secondary-text-color);font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.06em}
       .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
-      .stat{padding:8px;border:1px solid var(--edge);border-radius:10px;text-align:center}
+      .stat{padding:8px;border:1px solid color-mix(in srgb,var(--accent) 16%,transparent);border-left:3px solid var(--accent);border-radius:10px;background:linear-gradient(145deg,color-mix(in srgb,var(--accent) 6%,transparent),transparent 55%);box-shadow:0 4px 12px rgba(0,0,0,.08);text-align:center}
       .stat span{display:block;color:var(--secondary-text-color);font-size:8px;text-transform:uppercase;font-weight:700}
       .stat b{display:block;margin-top:3px;font-size:12px}
       .fields{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}
       .fields label{display:block;color:var(--secondary-text-color);font-size:9px;font-weight:700;margin-bottom:4px;text-transform:uppercase}
-      .fields select,.fields input{width:100%;padding:7px;border:1px solid var(--edge);border-radius:8px;background:transparent;color:var(--primary-text-color)}
+      .fields select,.fields input{width:100%;padding:7px;border:1px solid color-mix(in srgb,var(--accent) 16%,var(--edge));border-radius:8px;background:transparent;color:var(--primary-text-color)}
       .btn-row{display:flex;flex-wrap:wrap;gap:6px}
-      .btn-row button{flex:1;min-width:110px;padding:9px 6px;border:1px solid var(--edge);border-radius:10px;background:transparent;color:var(--primary-text-color);font-size:10px;font-weight:700;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:6px}
+      .btn-row button{flex:1;min-width:110px;padding:9px 6px;border:1px solid color-mix(in srgb,var(--accent) 16%,var(--edge));border-radius:10px;background:transparent;color:var(--primary-text-color);font-size:10px;font-weight:700;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:6px}
       .btn-row button:hover{border-color:var(--accent)}
       .btn-row ha-icon{--mdc-icon-size:15px;color:var(--accent)}
       .controls{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin-top:14px}
-      .controls button{display:flex;flex-direction:column;align-items:center;gap:4px;padding:9px 2px;border:1px solid var(--edge);border-radius:10px;background:transparent;color:var(--secondary-text-color);font-size:9px;font-weight:700;cursor:pointer}
+      .controls button{display:flex;flex-direction:column;align-items:center;gap:4px;padding:9px 2px;border:1px solid color-mix(in srgb,var(--accent) 16%,var(--edge));border-radius:10px;background:transparent;color:var(--secondary-text-color);font-size:9px;font-weight:700;cursor:pointer}
       .controls button:hover{border-color:var(--accent);color:var(--primary-text-color)}
       .controls button.primary{border-color:var(--accent);background:color-mix(in srgb,var(--accent) 16%,transparent);color:var(--primary-text-color)}
       .controls button:disabled{opacity:.35;cursor:default}
